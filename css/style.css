@@ -41,3 +41,4 @@ color: white;
 .BlackLink:hover   {color:#000;}  /* mouse over link */
 .BlackLink:active  {color:#000;} /* selected link   */ 
 
+.navbar-box-shadow{ box-shadow: 0 2px 4px 0 rgba(190, 190, 190, 0.1), 0 3px 10px 0 rgba(180, 180, 180, 0.19); }
