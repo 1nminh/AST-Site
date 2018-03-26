@@ -23,15 +23,24 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto ml-5">
                 <!-- <li class="nav-item active">
-                    <a class="nav-link" href="#">User Stories
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li> -->
-                <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">User Stories
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li> -->
+                <li class="nav-item dropdown mr-5 ml-5">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        User Stories
+                        <font class="navbar-font-size">User Stories</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mr-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <font class="navbar-font-size">Flow</font>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action 1</a>
@@ -40,20 +49,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Flow
+                        <font class="navbar-font-size">Test Case</font>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Test Case
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
                     </div>
                 </li>
             </ul>
@@ -62,9 +62,18 @@
 
     <div class="container">
         <div class="row">
-            <div class="mt-3">
+            <div class="col-lg-3">
+                <div class="pt-3">
                 <h1>All Projects</h1>
             </div>
+            </div>
+            <div class="col-lg-6">
+            </div>
+            <div class="col-lg-3s">
+                <div class="pt-3">
+                    <button type="button" class="btn button-new-project white font-weight-bold" data-toggle="modal" data-target="#myModal">CREATE NEW PROJECT</button>
+                </div>
+                </div>
         </div>
         <div class="row my-3">
             <div class="col-lg-3 col-lg-offset-3">
@@ -78,9 +87,7 @@
                 </div>
             </div>
             <div class="col-lg-6"></div>
-            <div class="col-lg-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">New Project</button>
-            </div>
+            <div class="col-lg-3"></div>
         </div>
         <div class="row">
 
