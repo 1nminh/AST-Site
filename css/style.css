@@ -74,8 +74,40 @@ color: white;
     font-weight: bold;
 }
 
-.button-new-project{
+.button-project-blue{
     border-radius: 15px;
     background-color: #3284fd;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+.button-project-white{
+    border-radius: 15px;
+    background-color: white;
+    color: #3284fd;
+    border: 1px solid #3284fd;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card-project-title{
+  border-bottom: solid 1px #e5e5e5;
+  font-size: 18px;
+  font-weight: 600;
+ background-color: rgb(235, 235, 235);
+}
+
+.card-project-text{
+
+}
+
+.project-search{
+    border-top-left-radius: 17.5px;
+    border-bottom-left-radius: 17.5px;
+    border: solid 1px #dadada;
+}
+.project-search-button{
+    border-radius: 17.5px;
+    border: solid 1px #dadada;
 }
 
