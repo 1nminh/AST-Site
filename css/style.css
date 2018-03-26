@@ -98,7 +98,11 @@ color: white;
 }
 
 .card-project-text{
+    text-align: center;
+}
 
+.card-project-shell{
+    border-right: 1px solid black;
 }
 
 .project-search{
@@ -107,7 +111,16 @@ color: white;
     border: solid 1px #dadada;
 }
 .project-search-button{
-    border-radius: 17.5px;
+    width: auto;
+    border-top-right-radius: 17.5px;
+    border-bottom-right-radius: 17.5px;
     border: solid 1px #dadada;
+    background-color: white;
+}
+
+.card-project-number{
+    color: #3284fd;
+    font-weight: bold;
+    font-size: 24px;
 }
 
