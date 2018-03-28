@@ -14,125 +14,133 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar-box-shadow">
+        <span class="navbar-brand mb-0 h1">AUTOMATIC SOFTWARE TESTING</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">s</span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">WebTest</a>
-
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <!-- AdlerkoV -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Test
-                        <span class="sr-only">(current)</span>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto ml-5">
+                <!-- <li class="nav-item active">
+                                    <a class="nav-link" href="#">User Stories
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li> -->
+                <li class="nav-item dropdown mr-5 ml-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <font class="navbar-font-size">User Stories</font>
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Results</a>
+                <li class="nav-item dropdown mr-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <font class="navbar-font-size">Flow</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Scheduler</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Documentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Activity</a>
+                <li class="nav-item dropdown border-blue-bottom">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <font class="navbar-font-size text-blue">Test Case</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
                 </li>
             </ul>
-            <form class="form-inline">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Login</button>
-            </form>
+            <div class="mr-3">
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle dropdown-navbar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Project 1
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Project 1</a>
+                        <a class="dropdown-item" href="#">Project 2</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
-
-    <div class="container-fluid mt-3 ml-5 mr-5">
+    <div class="container-fluid">
         <div class="row">
-            <form action="">
-
-                <button class="btn btn-warning my-2 my-sm-0" type="submit">
-                    <a href="./index.html" class="white">
-                        < </a>
-
-                </button>
-
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">+</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="container-fluid mt-3 ml-5 mr-5">
-
-        <form class="form-inline">
-            <div class="form-group">
-                <label>Test Case Name:</label>
-                <input type="text" class="form-control mx-sm-3">
+            <div class="col-lg-12 px-3 pt-4">
+                <font class="font-weight-bold mr-3">
+                    PRIORITY
+                </font>
+                <input type="button" class="btn button-priority mr-2" value="Low">
+                <input type="button" class="btn button-priority mr-2" value="Nomal">
+                <input type="button" class="btn button-priority mr-2" value="High">
+                <div class="text-secondary float-right">
+                    Result Generated in 2.63s
+                </div>
             </div>
-        </form>
-    </div>
-
-    <div class="container-fluid mt-3 mx-5">
-        <table class="table table-hover table-reflow">
-            <thead>
-                <tr>
-                    <th>Step</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="row">
-                            <div class="form-inline">
-                                <div class="form-group">
-                                    <label for="inputPassword6">Test Case Name:</label>
-                                    <input type="text" class="form-control mx-sm-3">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label class="mr-sm-2" for="inlineFormCustomSelect">Actions:</label>
-                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="id1">
-                                    <option selected>Choose action</option>
-                                    <option value="1">Click</option>
-                                    <option value="2">Written text</option>
-                                    <option value="3">Go to URL</option>
-                                </select>
-                            </div>
-
-                            <div id="1" class="notDisplay">
-                                <label class="mr-sm-2" for="inlineFormCustomSelect">Actions:</label>
-                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="id2">
-                                    <option selected>Choose action</option>
-                                    <option value="1">Click</option>
-                                    <option value="2">Written text</option>
-                                    <option value="3">Go to URL</option>
-                                </select>
-                            </div>
-
-                            <div id="2" class="notDisplay">
-                                    <label class="mr-sm-2" for="inlineFormCustomSelect">Actions:</label>
-                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0">
-                                        <option selected>Choose action 2</option>
-                                        <option value="1">Click</option>
-                                        <option value="2">Written text</option>
-                                        <option value="3">Go to URL</option>
-                                    </select>
-                                </div>
-                        </div>
-                        
-
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-3">Web test</h1>
-            <p class="lead">This is a Testing website</p>
+        </div>
+        <div class="row py-3 px-3 border-bottom">
+            <div class="col-lg-3 mx-auto px-0 tc-card-1">
+                <div class="text-center border-bottom py-2">
+                    Total Generated
+                </div>
+                <div class="text-center py-3">
+                    <font class="font-weight-bold" style="font-size: 48px;">
+                        23
+                    </font>
+                    (100%)
+                </div>
+            </div>
+            <div class="col-lg-3 mx-auto px-0 tc-card-2">
+                <div class="text-center border-bottom py-2">
+                    Total Generated
+                </div>
+                <div class="text-center py-3">
+                    <font class="font-weight-bold" style="font-size: 48px;">
+                        7
+                    </font>(35.6%)
+                </div>
+            </div>
+            <div class="col-lg-3 mx-auto px-0 tc-card-3">
+                <div class="text-center border-bottom py-2">
+                    Total Generated
+                </div>
+                <div class="text-center py-3">
+                    <font class="font-weight-bold" style="font-size: 48px;">
+                        16
+                    </font>(69.9%)
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                a
+            </div>
         </div>
     </div>
 </body>
