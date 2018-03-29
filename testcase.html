@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawesome-all.css">
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
     <title>Document</title>
 </head>
 
-<body>
+<body>    
     <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar-box-shadow">
         <span class="navbar-brand mb-0 h1">AUTOMATIC SOFTWARE TESTING</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -117,29 +118,224 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-                            aria-selected="true">Home</a>
+            <div class="col-lg-3 px-0">
+                <ul class="nav tc-nav-pills mb-3 border-bottom border-right" id="pills-tab" role="tablist">
+                    <li class="nav-item mr-auto ml-auto">
+                        <a class="nav-link BlackLink active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Feature Tests (7)</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
-                            aria-selected="false">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                            aria-selected="false">Contact</a>
+                    <li class="nav-item mr-auto ml-auto">
+                        <a class="nav-link BlackLink" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">End-to-End tests (16)</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="nav flex-column choosen-nav BlackLink" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link BlackLink active px-5" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">
+                                Login
+                            </a>
+                            <a class="nav-link BlackLink px-5" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                aria-selected="false">
+                                Set default language
+                            </a>
+                            <a class="nav-link BlackLink px-5" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                aria-selected="false">
+                                Pay with paypal
+                            </a>
+                            <a class="nav-link BlackLink px-5" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                aria-selected="false">
+                                Stories Name
+                            </a>
+                        </div>
+                    </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                </div>
+                <div class="row py-3 border-top border-bottom">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12 px-5">
+                                <font class="font-weight-bold">
+                                    LOGIC
+                                </font>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 px-5">
+                                <input type="button" class="btn w-100 my-3 py-3" value="Focus user stories">
+                            </div>
+                        </div>
+                        <div class="row py-3 border-bottom">
+                            <div class="col-lg-6 pl-5">
+                                <button type="button" class="btn button-project-blue w-100">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <div class="col-lg-6 pr-5">
+                                <button type="button" class="btn button-project-blue w-100">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-lg-12 pl-5">
+                                <font class="font-weight-bold">
+                                    EXPORT
+                                </font>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-lg-6 pl-5">
+                                <button type="button" class="btn button-project-blue w-100">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <font class="font-weight-bold"> EXCEL</font>
+                                </button>
+                            </div>
+                            <div class="col-lg-6 pr-5">
+                                <button type="button" class="btn button-project-blue w-100">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <font class="font-weight-bold"> EXCEL</font>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                                <div class="col-lg-6 pl-5">
+                                    <button type="button" class="btn button-project-blue w-100">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <font class="font-weight-bold"> HTML</font>
+                                    </button>
+                                </div>
+                                <div class="col-lg-6 pr-5">
+                                    <button type="button" class="btn button-project-blue w-100">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <font class="font-weight-bold"> EXCEL</font>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-9">
-                a
+            <div class="col-lg-9 px-0 bg-light">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="row">
+                            <div class="col-lg-12 pl-5 pt-3">
+                                <font style="font-weight: bold; color: rgb(185, 185, 185)">
+                                    Feature Test:
+                                </font>
+                                <font style="font-size: 36px; font-weight: bold;">
+                                    Login
+                                </font>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="accordion">
+                                    <div class="card m-3 my-3">
+                                        <div class="card-header bg-white" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <font class="btn bg-white" style="font-size: 24px; font-weight: bold;" data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Login - TC1
+                                                </font>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <font class="font-weight-bold">
+                                                            OBJECTIVE OF TEST
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-lg-12">
+                                                        <font class="">
+                                                            This is line 1
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <font class="font-weight-bold">
+                                                            OBJECTIVE OF TEST
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-lg-12">
+                                                        <font class="">
+                                                            This is line 2
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <font class="font-weight-bold">
+                                                            STEPS
+                                                        </font>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <font class="font-weight-bold">
+                                                            CHECKS
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-lg-4">
+                                                        <font class="">
+                                                            This is line 3
+                                                        </font>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <font class="">
+                                                            This is line 4
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <font class="font-weight-bold">
+                                                            PRIORITES
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-lg-12">
+                                                        <font class="">
+                                                            This is line 5
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-3 my-3">
+                                        <div class="card-header bg-white" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <font class="btn bg-white" style="font-size: 24px; font-weight: bold;" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Login - TC2
+                                                </font>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                                non cupidatat skateboard dolor brunch.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                </div>
             </div>
         </div>
     </div>

@@ -236,3 +236,18 @@ a:hover {
     background-image: linear-gradient(337deg, #dc8dff, #9b56ff);
     color: white;
 }
+
+.tc-nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.tc-nav-pills .nav-link.active,
+.tc-nav-pills .show>.nav-link {
+    color: #3284fd;
+    background-color: white;
+    border-bottom: 3px solid #3284fd;
+}
+
+.btn-collapse:focus {
+    outline: 0 !important;
+}
